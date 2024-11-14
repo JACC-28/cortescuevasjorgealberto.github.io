@@ -1,0 +1,128 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Contenedor */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos del header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Estilos de la sección Diseños */
+  .diseños {
+    background-color: #fff;
+    padding: 50px 0;
+  }
+  
+  .diseños h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .diseños-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .diseño-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .ver-mas {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Estilos de la sección Contacto */
+  .contacto {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contacto form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .contacto form input,
+  .contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contacto form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contacto form button:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
