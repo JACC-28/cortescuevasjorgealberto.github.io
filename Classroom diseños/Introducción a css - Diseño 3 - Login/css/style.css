@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0eefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.conizq {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.sección_inf {
+    width: 50%;
+    padding: 40px;
+    background: linear-gradient(135deg, #a77efb, #61e4b7);
+    color: white;
+    border-radius: 12px 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sección_inf h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: steelblue;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+
+ul li .iconos{
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.iconos {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.formulario {
+    width: 60%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+p {
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.checkbox {
+    display: flex;  
+    align-items: center; 
+    margin-bottom: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    width: 18px; 
+    height: 18px;
+    margin-right: 8px;  
+}
+
+.checkbox p {
+    font-size: 14px; 
+    margin: 0;
+}
+
+.checkbox a {
+    color: #007bff;  
+    text-decoration: none; 
+}
+
+.checkbox a:hover {
+    text-decoration: underline;  
+}
+
+
+a {
+    color: #7e57c2;
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #61e4b7;
+}
+
+.botones {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    margin-top: 10px;
+}
+
+.icono-boton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.icono-boton img {
+    width: 30px; 
+    height: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.icono-boton button {
+    display: none; 
+}
+
+
+.icono-boton:hover button {
+    display: block; 
+    background-color: #61e4b7; 
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px; 
+    width: 80px;
+}
+        
+
+.github {
+    background-color: white;
+    color: black;
+}
+
+.google {
+    background-color: white;
+    color: black;
+}
+

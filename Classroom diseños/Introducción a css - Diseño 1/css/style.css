@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.banner {
+    background: linear-gradient(to right, #e23054, #e02a5a);
+    padding: 15px;
+}
+
+.banner .contenedor-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.banner ul {
+    list-style: none;
+}
+
+.banner ul li {
+    display: inline;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.banner ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav  li a:hover{
+	background-color: rgb(103, 99, 209);
+	color:white;
+	transition: all 300ms;
+}
+
+.banner .logo-inicio {
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.banner .logo-inicio img {
+    margin-right: 1px;
+}
+
+.banner ul li:last-child {
+    margin-right: 70px;
+}
+
+
+
+.promocion {
+    background: linear-gradient(to right, #e23054, #e02a5a);
+    padding: 100px 80px;
+    color: white;
+}
+
+.promocion h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.promocion p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.promocion .btn {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.hero-img {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.hero-img img {
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%); 
+    width: 380px;
+    margin-top: -500px;
+}
+
+
+.how-it-works {
+    padding: 70px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.how-it-works h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.how-it-works h3 {
+    margin-bottom: 90px;
+    font-size: 15px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.opc {
+    text-align: justify;
+    max-width: 300px;
+    margin-bottom: 25px;
+}
+
+.opc img {
+    width: 60px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.opc h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.logo-inicio {
+    display: flex;
+    align-items: center;
+}
+
+.logo-inicio img {
+    width: 40px;
+    margin-right: 5px; 
+}
+
+.logo-inicio h1 {
+    font-size: 24px;
+    color: white;
+}
+
+hr {
+    width: 5%;
+    margin: 15px auto;
+    border: 1px solid;
+    color: #d62655;
+    margin-top: -18px;
+}
+
+
+.avanzado {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+}
+
+.avanzado h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.avanzado p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #666;
+    text-align: center;
+}
+
+.contenedor-avanzado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+}
+
+.funciones-izq, .funciones-der {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Para las funciones en el lado izquierdo (icono a la derecha) */
+
+.funcion-izq .titulo-icono {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding-top: 8px;
+    padding-right: 8px;
+}
+.subtitulo{
+    text-align: center;
+}
+.funcion-izq .titulo-icono h3 {
+    font-size: 18px;
+    margin-right: 10px; 
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-bottom: 0; 
+}
+
+.funcion-izq p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px; 
+    text-align:end; 
+    padding-left: 45px;
+
+}
+
+.funcion-izq .icono {
+    width: 45px; 
+    height: 45px; 
+    padding: 5px;
+    margin: 0; 
+    border: 3px solid #ff5a80 ;
+    border-radius: 15%;
+    background-color: #ff5a80;;
+    display: inline-block;
+
+}
+
+/* Para las funciones en el lado derecho */
+.funcion-der .titulo-icono {
+    display: flex;
+    flex-direction: row-reverse;  
+    justify-content: flex-end; 
+    align-items: center;  
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.funcion-der .titulo-icono h3 {
+    font-size: 18px;
+    margin-left: 10px; 
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-bottom: 0; 
+
+}
+
+.funcion-der p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px; 
+    text-align: left;
+    padding-right: 45px;
+
+}
+
+.funcion-der .icono {
+    width: 45px; 
+    height: 45px; 
+    padding: 5px;
+    margin: 0; 
+    border: 3px solid #ff5a80;
+    border-radius: 15%;
+    background-color: #ff5a80;
+}
+
+
+.contenedor-telefono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px px;
+
+}
+
+.telefono-img {
+    width: 100%;
+    max-width: 250px; 
+    height: auto;
+    margin: 0px 38px;
+}
