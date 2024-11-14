@@ -1,151 +1,98 @@
-/* Estilos generales para la página */
+/* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
     color: #333;
 }
 
-a {
-    text-decoration: none; /* Eliminar subrayado de los enlaces */
-    color: inherit; /* Heredar color del texto */
-}
-
-/* Estilos del contenedor principal */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Estilo para ocultar secciones */
-.oculto {
-    display: none;
-}
-
-/* Estilos de la cabecera del sitio */
+/* Header */
 header {
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 32px;
     margin: 0;
 }
 
-/* Estilo para enlaces de navegación */
 nav ul {
+    list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    padding: 0;
 }
 
 nav ul li {
-    list-style: none;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Estilos para la sección "Sobre mí" */
+/* Sección "Sobre mí" */
 .sobre-mi {
+    background-color: #f4f4f4;
     padding: 50px 20px;
-    background-color: #f4f4f4; 
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    margin-bottom: 30px; /* Espaciado debajo de la sección */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .sobre-mi h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    font-weight: 700;
-    color: #333;
 }
 
 .sobre-mi p {
-    font-size: 18px;
-    line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
+    font-size: 18px;
     color: #555;
 }
 
 .foto-perfil {
     width: 200px;
     height: 200px;
-    margin-top: 30px;
-    margin-bottom: 20px;
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
 }
 
-/* Efecto al pasar el cursor sobre la imagen */
-.foto-perfil:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilo para el contenedor de iconos de redes sociales */
 .redes-sociales {
     margin-top: 20px;
 }
 
 .redes-sociales a {
-    margin: 0 15px;
     color: #333;
     font-size: 24px;
-    transition: color 0.3s ease;
-    text-decoration: none;
+    margin: 0 10px;
 }
 
-.redes-sociales a:hover {
-    color: #e4405f; /* Color para Instagram */
-}
-
-/* Estilos para los iconos */
-.redes-sociales i {
-    margin-right: 10px;
-}
-
-/* Botón para Descargar CV */
 .sobre-mi .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #0073b1;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
+    color: #fff;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.sobre-mi .btn:hover {
-    background-color: #005f8e;
-}
-
-/* Estilo para la sección de "Diseños" */
+/* Sección de Diseños */
 .diseños {
     padding: 50px 20px;
     text-align: center;
@@ -154,102 +101,38 @@ nav ul li a:hover {
 
 .diseños h2 {
     font-size: 36px;
-    margin-bottom: 30px;
-    font-weight: 700;
 }
 
-.diseños .diseño-item {
-    display: inline-block;
-    margin: 15px;
-    width: calc(33% - 30px);
-    box-sizing: border-box;
-}
-
-.diseños .diseño-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Estilos de la sección "Contacto" */
+/* Sección de Contacto */
 .contacto {
     padding: 50px 20px;
-    background-color: #f9f9f9;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.contacto h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    font-weight: 700;
-    color: #333;
+    background-color: #f9f9f9;
 }
 
 .contacto form {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
-    text-align: left;
 }
 
-.contacto label {
-    font-size: 18px;
-    color: #555;
+.contacto label, .contacto input, .contacto textarea {
     display: block;
-    margin-top: 20px;
-}
-
-.contacto input[type="text"],
-.contacto input[type="email"],
-.contacto textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .contacto button {
-    margin-top: 20px;
     padding: 10px 20px;
     background-color: #0073b1;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.contacto button:hover {
-    background-color: #005f8e;
-}
-
-/* Estilos del pie de página */
+/* Footer */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    font-size: 16px;
-}
-
-footer .social-links a {
-    color: #ddd;
-    font-size: 16px;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-footer .social-links a:hover {
-    color: #e4405f; /* Color para Instagram */
 }
