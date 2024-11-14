@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio de Jorge Cortés</title>
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -16,37 +16,38 @@
       <h1>Bienvenido a mi portafolio</h1>
       <nav>
         <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#sobre-mi" onclick="mostrarSeccion('sobre-mi')">Sobre mí</a></li>
           <li><a href="#diseños">Diseños</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
-<!-- Sección "Sobre mí" -->
-<section id="sobre-mi" class="sobre-mi">
-  <div class="container">
-    <img src="img/21160607.jpg" alt="Foto de Perfil" class="foto-perfil">
-    <h2>Sobre mí</h2>
-    <p>Soy Jorge Cortés, un desarrollador web apasionado por crear soluciones innovadoras. Me especializo en el diseño y desarrollo de sitios web responsivos y funcionales, utilizando tecnologías como HTML, CSS, JavaScript, y frameworks modernos. Siempre busco aprender nuevas habilidades y enfrentar desafíos técnicos.</p>
-  </div>
 
-  <!-- Sección de Redes Sociales -->
-  <div class="redes-sociales">
-    <a href="https://www.linkedin.com/in/albertocortes29" target="_blank">
-      <i class="fab fa-linkedin"></i> LinkedIn
-    </a>
-    <a href="https://github.com/JACC-28" target="_blank">
-      <i class="fab fa-github"></i> GitHub
-    </a>
-    <a href="https://www.facebook.com/albertocortes" target="_blank">
-      <i class="fab fa-facebook"></i> Facebook
-    </a>
-  </div>
+  <!-- Sección "Sobre mí" -->
+  <section id="sobre-mi" class="sobre-mi oculto">
+    <div class="container">
+      <img src="img/21160607.jpg" alt="Foto de Perfil" class="foto-perfil">
+      <h2>Sobre mí</h2>
+      <p>Soy Jorge Cortés, un desarrollador web apasionado por crear soluciones innovadoras. Me especializo en el diseño y desarrollo de sitios web responsivos y funcionales, utilizando tecnologías como HTML, CSS, JavaScript, y frameworks modernos. Siempre busco aprender nuevas habilidades y enfrentar desafíos técnicos.</p>
+    </div>
 
-  <!-- Botón para Descargar el CV -->
-  <a href="CV/Pruebacv.pdf" class="btn">Descargar CV</a>
-</section>
+    <!-- Sección de Redes Sociales -->
+    <div class="redes-sociales">
+      <a href="https://www.instagram.com/albertocortes29" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://github.com/JACC-28" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://www.facebook.com/albertocortes" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook
+      </a>
+    </div>
+
+    <!-- Botón para Descargar el CV -->
+    <a href="CV/Pruebacv.pdf" class="btn">Descargar CV</a>
+  </section>
 
   <!-- Sección de Diseños -->
   <section id="diseños" class="diseños">
@@ -70,7 +71,7 @@
   </section>
 
   <!-- Sección de Contacto -->
-  <section id="contacto" class="contacto">
+  <section id="contacto" class="contacto oculto">
     <div class="container">
       <h2>Contacto</h2>
       <form>
@@ -92,11 +93,12 @@
     <div class="container">
       <p>&copy; 2024 Jorge Alberto Cortés Cuevas. Todos los derechos reservados.</p>
       <div class="social-links">
-        <a href="https://www.instagram.com/in/albertocortes29" target="_blank">LinkedIn</a> | 
+        <a href="https://www.instagram.com/albertocortes29" target="_blank">Instagram</a> | 
         <a href="https://github.com/JACC-28" target="_blank">GitHub</a>
       </div>
     </div>
   </footer>
 
+  <script src="js/scripts.js"></script>
 </body>
 </html>

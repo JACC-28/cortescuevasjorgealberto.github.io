@@ -1,6 +1,6 @@
 /* Estilos generales para la página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #fff;
@@ -17,6 +17,51 @@ a {
     width: 80%;
     margin: 0 auto;
 }
+
+/* Estilo para ocultar secciones */
+.oculto {
+    display: none;
+}
+
+/* Estilos de la cabecera del sitio */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+/* Estilo para enlaces de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
 /* Estilos para la sección "Sobre mí" */
 .sobre-mi {
     padding: 50px 20px;
@@ -43,21 +88,21 @@ a {
 }
 
 .foto-perfil {
-    width: 200px; /* Aumento de tamaño de la imagen */
+    width: 200px;
     height: 200px;
     margin-top: 30px;
     margin-bottom: 20px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #fff; /* Borde blanco alrededor de la imagen */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Efecto al pasar el cursor sobre la imagen */
 .foto-perfil:hover {
-    transform: scale(1.1); /* Agranda la imagen ligeramente */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al hacer hover */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilo para el contenedor de iconos de redes sociales */
@@ -70,11 +115,11 @@ a {
     color: #333;
     font-size: 24px;
     transition: color 0.3s ease;
-    text-decoration: none; /* Quitar subrayado */
+    text-decoration: none;
 }
 
 .redes-sociales a:hover {
-    color: #0073b1;
+    color: #e4405f; /* Color para Instagram */
 }
 
 /* Estilos para los iconos */
@@ -126,27 +171,61 @@ a {
     border-radius: 5px;
 }
 
-.diseños .diseño-item h3 {
-    margin-top: 10px;
-    font-size: 20px;
-}
-
-.diseños .diseño-item p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Estilos de la cabecera del sitio */
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
+/* Estilos de la sección "Contacto" */
+.contacto {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-    font-size: 40px;
-    margin: 0;
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contacto label {
+    font-size: 18px;
+    color: #555;
+    display: block;
+    margin-top: 20px;
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contacto button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0073b1;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: #005f8e;
 }
 
 /* Estilos del pie de página */
@@ -164,28 +243,13 @@ footer p {
     font-size: 16px;
 }
 
-/* Estilo para enlaces de navegación */
-nav ul {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+footer .social-links a {
+    color: #ddd;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
-nav ul li {
-    list-style: none;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 10px 20px;
-    display: inline-block;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #555;
+footer .social-links a:hover {
+    color: #e4405f; /* Color para Instagram */
 }
