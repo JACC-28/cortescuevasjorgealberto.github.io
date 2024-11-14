@@ -5,41 +5,41 @@ body {
     padding: 0;
     background-color: #fff;
     color: #333;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none; /* Eliminar subrayado de los enlaces */
     color: inherit; /* Heredar color del texto */
-  }
-  
-  /* Estilos del contenedor principal */
-  .container {
+}
+
+/* Estilos del contenedor principal */
+.container {
     width: 80%;
     margin: 0 auto;
-  }
-  
-  /* Sección "Sobre mí" */
-  .sobre-mi {
+}
+
+/* Sección "Sobre mí" */
+.sobre-mi {
     padding: 50px 20px; /* Espaciado en la parte superior e inferior */
     background-color: #f4f4f4; /* Fondo suave */
     text-align: center;
-  }
-  
-  .sobre-mi h2 {
+}
+
+.sobre-mi h2 {
     font-size: 36px; /* Tamaño grande para el encabezado */
     margin-bottom: 20px; /* Espaciado debajo del encabezado */
     font-weight: 700; /* Negrita */
-  }
-  
-  .sobre-mi p {
+}
+
+.sobre-mi p {
     font-size: 18px; /* Tamaño de texto adecuado */
     line-height: 1.6; /* Mayor espacio entre líneas */
     max-width: 800px; /* Limitar el ancho máximo */
     margin: 0 auto; /* Centrado en la página */
-  }
-  
-  /* Estilo para la imagen de perfil */
-  .foto-perfil {
+}
+
+/* Estilo para la imagen de perfil */
+.foto-perfil {
     margin-top: 30px;
     margin-bottom: 20px;
     border-radius: 50%; /* Hace la imagen redonda */
@@ -47,26 +47,26 @@ body {
     height: 150px;
     object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin deformarse */
     border: 3px solid #333; /* Bordes de la imagen */
-  }
-  
-  /* Estilo para el contenedor de iconos de redes sociales */
-  .redes-sociales {
+}
+
+/* Estilo para el contenedor de iconos de redes sociales */
+.redes-sociales {
     margin-top: 20px;
-  }
-  
-  .redes-sociales a {
+}
+
+.redes-sociales a {
     margin: 0 15px;
     color: #333;
     font-size: 24px;
     transition: color 0.3s ease;
-  }
-  
-  .redes-sociales a:hover {
+}
+
+.redes-sociales a:hover {
     color: #0073b1; /* Color al pasar el ratón (puedes cambiarlo) */
-  }
-  
-  /* Estilo para el botón de "Descargar CV" */
-  .sobre-mi .btn {
+}
+
+/* Estilo para el botón de "Descargar CV" */
+.sobre-mi .btn {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px; /* Espaciado dentro del botón */
@@ -77,63 +77,63 @@ body {
     text-decoration: none; /* Eliminar subrayado */
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s ease; /* Efecto de transición */
-  }
-  
-  .sobre-mi .btn:hover {
+}
+
+.sobre-mi .btn:hover {
     background-color: #005f8e; /* Cambio de color al hacer hover */
-  }
-  
-  /* Estilo para la sección de "Diseños" */
-  .diseños {
+}
+
+/* Estilo para la sección de "Diseños" */
+.diseños {
     padding: 50px 20px;
     text-align: center;
     background-color: #fff;
-  }
-  
-  .diseños h2 {
+}
+
+.diseños h2 {
     font-size: 36px;
     margin-bottom: 30px;
     font-weight: 700;
-  }
-  
-  .diseños .diseño-item {
+}
+
+.diseños .diseño-item {
     display: inline-block;
     margin: 15px;
     width: calc(33% - 30px);
     box-sizing: border-box;
-  }
-  
-  .diseños .diseño-item img {
+}
+
+.diseños .diseño-item img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-  }
-  
-  .diseños .diseño-item h3 {
+}
+
+.diseños .diseño-item h3 {
     margin-top: 10px;
     font-size: 20px;
-  }
-  
-  .diseños .diseño-item p {
+}
+
+.diseños .diseño-item p {
     font-size: 16px;
     color: #666;
-  }
-  
-  /* Estilos de la cabecera del sitio */
-  header {
+}
+
+/* Estilos de la cabecera del sitio */
+header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     font-size: 40px;
     margin: 0;
-  }
-  
-  /* Estilos del pie de página */
-  footer {
+}
+
+/* Estilos del pie de página */
+footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -141,59 +141,34 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
-  }
-  
-  footer p {
+}
+
+footer p {
     font-size: 16px;
-  }
-  
-  /* Estilo para enlaces de navegación */
-  .navbar {
+}
+
+/* Estilo para enlaces de navegación */
+nav ul {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-  }
-  
-  .navbar a {
-    padding: 10px 20px;
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
+}
+
+nav ul li {
+    list-style: none;
     margin: 0 15px;
-    border-radius: 5px;
-  }
-  
-  .navbar a:hover {
-    background-color: #0073b1;
+}
+
+nav ul li a {
     color: white;
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 768px) {
-    .sobre-mi h2 {
-      font-size: 28px;
-    }
-  
-    .sobre-mi p {
-      font-size: 16px;
-    }
-  
-    .sobre-mi .btn {
-      font-size: 14px;
-    }
-  
-    .diseños .diseño-item {
-      width: 100%;
-      margin-bottom: 30px;
-    }
-  
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .navbar a {
-      margin: 5px 0;
-    }
-  }
-  
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}

@@ -1,100 +1,199 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Jorge Cortés</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>Bienvenido a mi portafolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#diseños">Diseños</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Sección de Diseños -->
-  <section id="diseños" class="diseños">
-    <div class="container">
-      <h2>Mis Diseños</h2>
-      <div class="diseños-grid">
-        <!-- Diseño 1 -->
-        <div class="diseño-item">
-          <img src="img/diseño1.jpg" alt="Diseño 1">
-          <a href="https://enlacealproyecto.com" class="ver-mas">Ver Proyecto</a>
-        </div>
-
-        <!-- Diseño 2 -->
-        <div class="diseño-item">
-          <img src="img/diseño2.png" alt="Diseño 2">
-          <a href="https://enlacealproyecto2.com" class="ver-mas">Ver Proyecto</a>
-        </div>
-
-        <!-- Diseño 3 -->
-        <div class="diseño-item">
-          <img src="img/diseño3.png" alt="Diseño 3">
-          <a href="https://enlacealproyecto3.com" class="ver-mas">Ver Proyecto</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección "Sobre mí" -->
-  <section id="sobre-mi" class="sobre-mi">
-    <div class="container">
-      <!-- Imagen de perfil -->
-      <img src="img/21160607.jpg" alt="Foto de Perfil" class="foto-perfil">
-
-      <h2>Sobre mí</h2>
-      <p>Soy Jorge Cortés, un desarrollador web apasionado por crear soluciones innovadoras. Me especializo en el diseño y desarrollo de sitios web responsivos y funcionales, utilizando tecnologías como HTML, CSS, JavaScript, y frameworks modernos. Siempre busco aprender nuevas habilidades y enfrentar desafíos técnicos.</p>
-    </div>
-
-    <!-- Sección de Redes Sociales -->
-    <div class="redes-sociales">
-      <a href="https://www.linkedin.com/in/jorge-cortes" target="_blank">LinkedIn</a>
-      <a href="https://github.com/JACC-28" target="_blank">GitHub</a>
-      <a href="https://twitter.com/jorge_cortes" target="_blank">Twitter</a>
-    </div>
-
-    <!-- Botón para Descargar el CV -->
-    <a href="CV/Pruebacv.pdf" class="btn">Descargar CV</a>
-  </section>
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
   
-  <!-- Contacto -->
-  <section id="contacto" class="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Jorge Alberto Cortés Cuevas. Todos los derechos reservados.</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/jorge-cortes" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com/JACC-28" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </footer>
+  a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: inherit; /* Heredar color del texto */
+  }
+  
+  /* Estilos del contenedor principal */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Sección "Sobre mí" */
+  .sobre-mi {
+    padding: 50px 20px; /* Espaciado en la parte superior e inferior */
+    background-color: #f4f4f4; /* Fondo suave */
+    text-align: center;
+  }
+  
+  .sobre-mi h2 {
+    font-size: 36px; /* Tamaño grande para el encabezado */
+    margin-bottom: 20px; /* Espaciado debajo del encabezado */
+    font-weight: 700; /* Negrita */
+  }
+  
+  .sobre-mi p {
+    font-size: 18px; /* Tamaño de texto adecuado */
+    line-height: 1.6; /* Mayor espacio entre líneas */
+    max-width: 800px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrado en la página */
+  }
+  
+  /* Estilo para la imagen de perfil */
+  .foto-perfil {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    width: 150px; /* Tamaño fijo de la imagen */
+    height: 150px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin deformarse */
+    border: 3px solid #333; /* Bordes de la imagen */
+  }
+  
+  /* Estilo para el contenedor de iconos de redes sociales */
+  .redes-sociales {
+    margin-top: 20px;
+  }
+  
+  .redes-sociales a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  
+  .redes-sociales a:hover {
+    color: #0073b1; /* Color al pasar el ratón (puedes cambiarlo) */
+  }
+  
+  /* Estilo para el botón de "Descargar CV" */
+  .sobre-mi .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    background-color: #0073b1; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de texto del botón */
+    font-weight: 500;
+    text-decoration: none; /* Eliminar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+  }
+  
+  .sobre-mi .btn:hover {
+    background-color: #005f8e; /* Cambio de color al hacer hover */
+  }
+  
+  /* Estilo para la sección de "Diseños" */
+  .diseños {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .diseños h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  .diseños .diseño-item {
+    display: inline-block;
+    margin: 15px;
+    width: calc(33% - 30px);
+    box-sizing: border-box;
+  }
+  
+  .diseños .diseño-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .diseños .diseño-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .diseños .diseño-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Estilos de la cabecera del sitio */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+  /* Estilo para enlaces de navegación */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .navbar a {
+    padding: 10px 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 5px;
+  }
+  
+  .navbar a:hover {
+    background-color: #0073b1;
+    color: white;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .sobre-mi h2 {
+      font-size: 28px;
+    }
+  
+    .sobre-mi p {
+      font-size: 16px;
+    }
+  
+    .sobre-mi .btn {
+      font-size: 14px;
+    }
+  
+    .diseños .diseño-item {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      margin: 5px 0;
+    }
+  }
   
