@@ -1,172 +1,22 @@
-/* Reset de márgenes y paddings */
-* {
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-
-  }
-  
-  /* Contenedor */
-  .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Estilos del header */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-  }
-  
-  header h1 {
-    text-align: center;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 10px;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
-  /* Estilos de la sección Diseños */
-  .diseños {
     background-color: #fff;
-    padding: 50px 0;
+    color: #333;
   }
   
-  .diseños h2 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .diseños-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .diseño-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .ver-mas {
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  /* Estilos de la sección Contacto */
-  .contacto {
-    background-color: #f9f9f9;
-    padding: 50px 0;
-  }
-  
-  .contacto form {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contacto form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .contacto form input,
-  .contacto form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contacto form button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contacto form button:hover {
-    background-color: #555;
-  }
-  
-  /* Estilos del footer */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  /* Animación para las imágenes de diseño */
-.diseño-item img {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .diseño-item img:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Hover en los enlaces */
-  .ver-mas {
-    transition: background-color 0.3s ease;
-  }
-  
-  .ver-mas:hover {
-    background-color: #555;
-  }
-  
-  /* Media queries para pantallas pequeñas */
-@media (max-width: 768px) {
-    .diseños-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    nav ul {
-      flex-direction: column;
-    }
-  }
-
   /* Estilos generales para la sección "Sobre mí" */
-.sobre-mi {
+  .sobre-mi {
     padding: 50px 20px; /* Espaciado en la parte superior e inferior */
     background-color: #f4f4f4; /* Fondo suave */
-    color: #333; /* Color del texto */
+    text-align: center;
   }
   
   .sobre-mi h2 {
     font-size: 36px; /* Tamaño grande para el encabezado */
     margin-bottom: 20px; /* Espaciado debajo del encabezado */
-    text-align: center; /* Centrado */
     font-weight: 700; /* Negrita */
   }
   
@@ -175,7 +25,34 @@
     line-height: 1.6; /* Mayor espacio entre líneas */
     max-width: 800px; /* Limitar el ancho máximo */
     margin: 0 auto; /* Centrado en la página */
-    text-align: center; /* Centrado del texto */
+  }
+  
+  /* Estilo para la imagen de perfil */
+  .foto-perfil {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    width: 150px; /* Tamaño fijo de la imagen */
+    height: 150px;
+    object-fit: cover; /* Ajusta la imagen para cubrir el espacio sin deformarse */
+    border: 3px solid #333; /* Bordes de la imagen */
+  }
+  
+  /* Estilo para el contenedor de iconos de redes sociales */
+  .redes-sociales {
+    margin-top: 20px;
+  }
+  
+  .redes-sociales a {
+    margin: 0 15px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .redes-sociales a:hover {
+    color: #0073b1; /* Color al pasar el ratón (puedes cambiarlo) */
   }
   
   /* Estilo para el botón de "Descargar CV" */
@@ -183,7 +60,7 @@
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px; /* Espaciado dentro del botón */
-    background-color: #0073b1; /* Color de fondo (puedes cambiarlo) */
+    background-color: #0073b1; /* Color de fondo */
     color: white; /* Color del texto */
     font-size: 16px; /* Tamaño de texto del botón */
     font-weight: 500;
@@ -210,5 +87,4 @@
       font-size: 14px; /* Reducir tamaño del botón en pantallas pequeñas */
     }
   }
-  
   
