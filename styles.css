@@ -6,9 +6,10 @@
   }
   
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+
   }
   
   /* Contenedor */
@@ -124,5 +125,34 @@
     color: white;
     text-align: center;
     padding: 20px 0;
+  }
+  
+  /* Animación para las imágenes de diseño */
+.diseño-item img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .diseño-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Hover en los enlaces */
+  .ver-mas {
+    transition: background-color 0.3s ease;
+  }
+  
+  .ver-mas:hover {
+    background-color: #555;
+  }
+  
+  /* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .diseños-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
   }
   
