@@ -7,7 +7,18 @@ body {
     color: #333;
   }
   
-  /* Estilos generales para la sección "Sobre mí" */
+  a {
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    color: inherit; /* Heredar color del texto */
+  }
+  
+  /* Estilos del contenedor principal */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Sección "Sobre mí" */
   .sobre-mi {
     padding: 50px 20px; /* Espaciado en la parte superior e inferior */
     background-color: #f4f4f4; /* Fondo suave */
@@ -47,7 +58,6 @@ body {
     margin: 0 15px;
     color: #333;
     font-size: 24px;
-    text-decoration: none;
     transition: color 0.3s ease;
   }
   
@@ -73,18 +83,117 @@ body {
     background-color: #005f8e; /* Cambio de color al hacer hover */
   }
   
-  /* Diseño responsivo */
+  /* Estilo para la sección de "Diseños" */
+  .diseños {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .diseños h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  .diseños .diseño-item {
+    display: inline-block;
+    margin: 15px;
+    width: calc(33% - 30px);
+    box-sizing: border-box;
+  }
+  
+  .diseños .diseño-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .diseños .diseño-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .diseños .diseño-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Estilos de la cabecera del sitio */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+  /* Estilo para enlaces de navegación */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .navbar a {
+    padding: 10px 20px;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 5px;
+  }
+  
+  .navbar a:hover {
+    background-color: #0073b1;
+    color: white;
+  }
+  
+  /* Estilos responsivos */
   @media (max-width: 768px) {
     .sobre-mi h2 {
-      font-size: 28px; /* Reducir tamaño del encabezado en pantallas pequeñas */
+      font-size: 28px;
     }
   
     .sobre-mi p {
-      font-size: 16px; /* Reducir tamaño de texto en pantallas pequeñas */
+      font-size: 16px;
     }
   
     .sobre-mi .btn {
-      font-size: 14px; /* Reducir tamaño del botón en pantallas pequeñas */
+      font-size: 14px;
+    }
+  
+    .diseños .diseño-item {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar a {
+      margin: 5px 0;
     }
   }
   
