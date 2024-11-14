@@ -3,89 +3,99 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portafolio de Jorge Cortés</title>
+  <title>Portafolio de diseños</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Header -->
+
   <header>
     <div class="container">
       <h1>Bienvenido a mi portafolio</h1>
       <nav>
         <ul>
-          <li><a href="#sobre-mi" onclick="mostrarSeccion('sobre-mi')">Sobre mí</a></li>
-          <li><a href="#diseños" onclick="mostrarSeccion('diseños')">Diseños</a></li>
-          <li><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#diseños">Diseños</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Sección "Sobre mí" -->
-  <section id="sobre-mi" class="sobre-mi" style="display: none;">
-    <div class="container">
-      <img src="img/21160607.jpg" alt="Foto de Perfil" class="foto-perfil">
-      <h2>Sobre mí</h2>
-      <p>Soy Jorge Cortés, un desarrollador web apasionado por crear soluciones innovadoras...</p>
-    </div>
 
-    <!-- Sección de Redes Sociales -->
-    <div class="redes-sociales">
-      <a href="https://www.instagram.com/in/albertocortes29" target="_blank">
-        <i class="fab fa-instagram"></i> Instagram
-      </a>
-      <a href="https://github.com/JACC-28" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-      <a href="https://www.facebook.com/albertocortes" target="_blank">
-        <i class="fab fa-facebook"></i> Facebook
-      </a>
-    </div>
+<section id="sobre-mi" class="sobre-mi">
+  <div class="container">
+    <img src="img/21160607.jpg" alt="Foto de Perfil" class="foto-perfil">
+    <h2>Sobre mí</h2>
+    <p>Soy Jorge Alberto Cortés Cuevas, estudiante de la carrera de Ingenieria En Sistemas Computacionales. Estoy cursando la materia de Programacion Web y especializandome en el diseño y desarrollo de sitios web responsivos y funcionales, utilizando tecnologías como HTML, CSS, JavaScript, y frameworks modernos. Siempre busco aprender nuevas habilidades y enfrentar desafíos técnicos.</p>
+  </div>
 
-    <!-- Botón para Descargar el CV -->
-    <a href="CV/Pruebacv.pdf" class="btn">Descargar CV</a>
-  </section>
+  <div class="redes-sociales">
+    <a href="https://www.instagram.com/alberto_cortes910" target="_blank">
+      <i class="fab fa-instagram"></i> Instagram
+    </a>
+    <a href="https://github.com/JACC-28" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="https://www.facebook.com" target="_blank">
+      <i class="fab fa-facebook"></i> Facebook
+    </a>
+  </div>
 
-  <!-- Sección de Diseños -->
+
+  <a href="CV/Pruebacv.pdf" class="btn">Descargar CV</a>
+</section>
+
+
   <section id="diseños" class="diseños">
     <div class="container">
       <h2>Mis Diseños</h2>
       <div class="diseños-grid">
-        <!-- Contenido de los diseños -->
+        <div class="diseño-item">
+          <img src="img/diseño1.jpg" alt="Diseño 1">
+          <a href="https://enlacealproyecto.com" class="ver-mas">Ver Proyecto</a>
+        </div>
+        <div class="diseño-item">
+          <img src="img/diseño2.png" alt="Diseño 2">
+          <a href="https://enlacealproyecto2.com" class="ver-mas">Ver Proyecto</a>
+        </div>
+        <div class="diseño-item">
+          <img src="img/diseño3.png" alt="Diseño 3">
+          <a href="https://enlacealproyecto3.com" class="ver-mas">Ver Proyecto</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Sección de Contacto -->
-  <section id="contacto" class="contacto" style="display: none;">
+  <section id="contacto" class="contacto">
     <div class="container">
       <h2>Contacto</h2>
       <form>
-        <!-- Formulario de contacto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <button type="submit">Enviar</button>
       </form>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>&copy; 2024 Jorge Alberto Cortés Cuevas. Todos los derechos reservados.</p>
+      <p>&copy; 2024 Alberto Cortés. Todos los derechos reservados.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/alberto_cortes910" target="_blank">Instagram</a> | 
+        <a href="https://github.com/JACC-28" target="_blank">GitHub</a>
+      </div>
     </div>
   </footer>
 
-  <script>
-    function mostrarSeccion(id) {
-      document.getElementById("sobre-mi").style.display = "none";
-      document.getElementById("diseños").style.display = "none";
-      document.getElementById("contacto").style.display = "none";
-      
-      document.getElementById(id).style.display = "block";
-    }
-
-    // Mostrar sección de "Diseños" al inicio
-    mostrarSeccion("diseños");
-  </script>
 </body>
 </html>

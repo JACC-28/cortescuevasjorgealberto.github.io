@@ -1,4 +1,4 @@
-/* Reset de márgenes y paddings */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +11,12 @@
     color: #333;
   }
   
-  /* Contenedor */
   .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
   }
   
-  /* Estilos del header */
   header {
     background-color: #333;
     color: white;
@@ -45,8 +43,7 @@
     text-decoration: none;
     font-size: 18px;
   }
-  
-  /* Estilos de la sección Diseños */
+
   .diseños {
     background-color: #fff;
     padding: 50px 0;
@@ -80,7 +77,6 @@
     border-radius: 5px;
   }
   
-  /* Estilos de la sección Contacto */
   .contacto {
     background-color: #f9f9f9;
     padding: 50px 0;
@@ -118,7 +114,6 @@
     background-color: #555;
   }
   
-  /* Estilos del footer */
   footer {
     background-color: #333;
     color: white;
@@ -126,3 +121,85 @@
     padding: 20px 0;
   }
   
+
+.sobre-mi {
+  padding: 50px 20px;
+  background-color: #f4f4f4; 
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; 
+}
+
+.sobre-mi h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.sobre-mi p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.foto-perfil {
+  width: 200px; 
+  height: 200px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+.foto-perfil:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+
+.redes-sociales {
+  margin-top: 20px;
+}
+
+.redes-sociales a {
+  margin: 0 15px;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s ease;
+  text-decoration: none; 
+}
+
+.redes-sociales a:hover {
+  color: #0073b1;
+}
+
+
+.redes-sociales i {
+  margin-right: 10px;
+}
+
+
+.sobre-mi .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0073b1;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sobre-mi .btn:hover {
+  background-color: #005f8e;
+}
