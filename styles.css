@@ -70,10 +70,16 @@ a {
     color: #333;
     font-size: 24px;
     transition: color 0.3s ease;
+    text-decoration: none; /* Quitar subrayado */
 }
 
 .redes-sociales a:hover {
     color: #0073b1;
+}
+
+/* Estilos para los iconos */
+.redes-sociales i {
+    margin-right: 10px;
 }
 
 /* Botón para Descargar CV */
