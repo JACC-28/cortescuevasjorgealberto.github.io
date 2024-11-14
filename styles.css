@@ -155,4 +155,60 @@
       flex-direction: column;
     }
   }
+
+  /* Estilos generales para la sección "Sobre mí" */
+.sobre-mi {
+    padding: 50px 20px; /* Espaciado en la parte superior e inferior */
+    background-color: #f4f4f4; /* Fondo suave */
+    color: #333; /* Color del texto */
+  }
+  
+  .sobre-mi h2 {
+    font-size: 36px; /* Tamaño grande para el encabezado */
+    margin-bottom: 20px; /* Espaciado debajo del encabezado */
+    text-align: center; /* Centrado */
+    font-weight: 700; /* Negrita */
+  }
+  
+  .sobre-mi p {
+    font-size: 18px; /* Tamaño de texto adecuado */
+    line-height: 1.6; /* Mayor espacio entre líneas */
+    max-width: 800px; /* Limitar el ancho máximo */
+    margin: 0 auto; /* Centrado en la página */
+    text-align: center; /* Centrado del texto */
+  }
+  
+  /* Estilo para el botón de "Descargar CV" */
+  .sobre-mi .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    background-color: #0073b1; /* Color de fondo (puedes cambiarlo) */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de texto del botón */
+    font-weight: 500;
+    text-decoration: none; /* Eliminar subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+  }
+  
+  .sobre-mi .btn:hover {
+    background-color: #005f8e; /* Cambio de color al hacer hover */
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    .sobre-mi h2 {
+      font-size: 28px; /* Reducir tamaño del encabezado en pantallas pequeñas */
+    }
+  
+    .sobre-mi p {
+      font-size: 16px; /* Reducir tamaño de texto en pantallas pequeñas */
+    }
+  
+    .sobre-mi .btn {
+      font-size: 14px; /* Reducir tamaño del botón en pantallas pequeñas */
+    }
+  }
+  
   
